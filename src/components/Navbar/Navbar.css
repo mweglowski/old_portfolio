@@ -1,0 +1,30 @@
+.navbar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	background-color: #2e2e2ed8;
+	font-family: 'Quicksand', 'sans-serif';
+	z-index: 10;
+}
+
+.navbar-expand-btn {
+	font-size: 1rem;
+	padding: .4em .6em;
+	margin: .2em;
+
+	font-family: 'Quicksand', 'sans-serif';
+	font-weight: 500;
+	color: coral;
+	border-radius: 5px;
+	border: 2px solid coral;
+	background-color: transparent;
+	transition: .2s;
+}
+.navbar-expand-btn:hover {
+	color: black;
+	background-color: coral;
+	box-shadow: 0 0 .3em coral;
+	cursor: pointer;
+}

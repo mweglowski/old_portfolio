@@ -45,7 +45,7 @@
     text-shadow: 0 0 0.5em #62baba;
   }
   50% {
-    text-shadow: 0 0 0em #62baba;
+    text-shadow: 0 0 0.05em #62baba;
   }
   100% {
     text-shadow: 0 0 0.5em #62baba;
