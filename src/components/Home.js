@@ -6,7 +6,7 @@ const Home = (props) => {
     <div className="home">
       <div className="title">
         <div className="title-welcome"></div>
-        <div className="title-name"></div>
+        <div className="title-name"><span>Martin</span></div>
         <div className="title-profession"></div>
         <button className='home-button'>Contact</button>
       </div>

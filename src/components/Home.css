@@ -1,93 +1,122 @@
 .home {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: space-evenly;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
 
-	background-color: #353535;
+  background-color: #353535;
 }
 
 .title {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
 
-	color: rgba(255, 255, 255, 0.793);
-	font-size: 2rem;
+  color: rgba(255, 255, 255, 0.793);
+  font-size: 3rem;
 }
 
 .title-welcome {
-	overflow: hidden;
+  overflow: hidden;
 }
 .title-welcome::before {
-	content: 'Hi!';
-	position: relative;
-	top: 0;
-	animation: slide-up 1s ease-out;
+  content: "Hi!";
+  position: relative;
+  left: 0;
+  animation: slide-right 1s ease-out;
 }
 
 .title-name {
-	overflow: hidden;
+  overflow: hidden;
 }
 .title-name::before {
-	content: 'I am Martin';
-	position: relative;
-	top: 0;
-	animation: slide-up 1s ease-out;
-	animation-delay: .5s;
+  content: "I am ";
+  position: relative;
+  top: 0;
+}
+
+.title-name span {
+  color: #62baba;
+  animation: text-breath 4s infinite;
+}
+@keyframes text-breath {
+  0% {
+    text-shadow: 0 0 0.5em #62baba;
+  }
+  50% {
+    text-shadow: 0 0 0em #62baba;
+  }
+  100% {
+    text-shadow: 0 0 0.5em #62baba;
+  }
 }
 
 .title-profession {
-	overflow: hidden;
+  overflow: hidden;
 }
 .title-profession::before {
-	content: 'Front-End Developer';
-	position: relative;
-	animation: slide-up 1s ease-out;
-	animation-delay: 1s;
-	top: 0;
+  content: "Front-End Developer";
+  position: relative;
+
+  font-size: 0.6em;
+  color: rgba(222, 222, 222, 0.793);
+  animation: show-profession 4s ease-out;
+  top: 0;
+}
+@keyframes show-profession {
+  from {
+    opacity: 0;
+		text-shadow: 0 0 1em white;
+  }
+  to {
+    opacity: 1;
+		text-shadow: none;
+  }
 }
 
-/* @keyframes slide-up {
-	0% {
-		opacity: 0;
-		top: 50px;
-	}
-	50% {
-		opacity: .6;
-	}
-	90% {
-		opacity: 1;
-		top: -10px;
-	}
-	100% {
-		opacity: 1;
-		top: 0;
-	}
-} */
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 1;
+    left: 10px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
 
 .portrait-image {
-	width: 70%;
+  width: 70%;
 
-	border-radius: 40%;
+  border-radius: 40%;
 }
 
 .home-button {
-	width: fit-content;
-	margin: auto;
-	margin-top: 1rem;
-	padding: .4em .7em;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.4em 0.7em;
 
-	font-size: 1.2rem;
-	color: #62baba;
-	background-color: transparent;
-	border: 2px solid #62baba;
-	border-radius: 5px;
-	transition: .4s;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #62baba;
+  background-color: transparent;
+  border: 2px solid #62baba;
+  border-radius: 5px;
+  transition: 0.4s;
 }
 .home-button:hover {
-	background-color: #62baba;
-	color: black;
-	cursor: pointer;
+  background-color: #62baba;
+  box-shadow: 0 0 0.5em #62baba;
+  color: black;
+  cursor: pointer;
 }
