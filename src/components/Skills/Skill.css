@@ -1,0 +1,53 @@
+.skill {
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	padding: 1em;
+	background-color: #292929;
+	border-radius: 15px;
+}
+
+.skill-name {
+	font-size: 1.8rem;
+	color: #ffffffdd;
+}
+
+.skill-chart-box {
+	padding: .5em;
+	background-color: #313131dd;
+	border-radius: 10px;
+}
+
+.skill-boiler {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	background-color: #272727;
+	border-radius: 20px;
+	/* border: 2px solid #353535; */
+}
+
+.skill-liquid {
+	height: inherit;
+	width: 77%;
+	padding-right: 5px;
+	
+	background-color: #00ffff88;
+	box-shadow: 0 0 .8em #00ffff7a;
+	border-radius: 20px;
+	color: black;
+	text-align: right;
+	text-shadow: 0 0 .2em black;
+	animation: fill-boiler 2s ease-in-out;
+}
+@keyframes fill-boiler {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+	to {
+		opacity: 1;
+		width: 77%;
+	}
+}
+
