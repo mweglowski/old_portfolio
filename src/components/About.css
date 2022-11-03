@@ -1,8 +1,29 @@
-.about {
-	height: 100vh;
+.about-section {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+	padding-bottom: 4em;
+	background-color: #353535a4;
 }
 
-.section-title {
-	font-size: 2.5rem;
+.about-section-title {
+	margin: .7em;
+	background-color: #353535a4;
+	border-radius: 30% 20px 30% 20px;
+	border: 2px solid gray;
+	box-shadow: 0 0 .2em gray;
+	font-size: 3.5rem;
+	color: rgba(255, 255, 255, .7);
 	text-align: center;
+}
+
+.about-section-description {
+	margin: 0 .7em;
+	padding: 1em;
+
+	background-color: #353535a4;
+	border-radius: 12px;
+	font-family: 'Quicksand', 'sans-serif';
+	font-size: 1.5em;
+	color:rgba(255, 255, 255, .6);
 }

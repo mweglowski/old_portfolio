@@ -3,7 +3,7 @@ import NavLinks from "./NavLinks";
 import "./Navbar.css";
 
 const Navbar = (props) => {
-  const [isNavLinksShown, setIsNavLinksShown] = useState(true);
+  const [isNavLinksShown, setIsNavLinksShown] = useState(false);
 
   const toggleNavLinksDisplayHandler = () => {
     setIsNavLinksShown((prevDisplay) => !prevDisplay);

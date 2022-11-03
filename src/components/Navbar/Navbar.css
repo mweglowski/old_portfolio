@@ -5,7 +5,8 @@
 	width: 100%;
 
 	background-color: #2e2e2ed8;
-	font-family: 'Quicksand', 'sans-serif';
+	/* font-family: 'Quicksand', 'sans-serif'; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	z-index: 10;
 }
 
