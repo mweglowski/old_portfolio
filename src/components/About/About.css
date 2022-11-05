@@ -9,6 +9,7 @@
 .about-section-title {
 	margin: .7em;
 	background-color: #353535a4;
+	backdrop-filter: blur(10px);
 	border-radius: 30% 20px 30% 20px;
 	border: 2px solid gray;
 	box-shadow: 0 0 .2em gray;

@@ -4,10 +4,12 @@
   "homepage": "https://Mweglowski.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.9.0",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
+    "emailjs": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.0",
