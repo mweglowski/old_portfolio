@@ -1,0 +1,14 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10em;
+
+	background-color: #353535;
+}
+
+.sectionTitle {
+	margin: .8em;
+	font-size: 3.5rem;
+	text-shadow: 0 0 .2em black;
+	color: #ffffffcc;
+}

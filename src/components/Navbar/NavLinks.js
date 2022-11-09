@@ -5,6 +5,7 @@ const NavLinks = (props) => {
     Home: props.navigationRefs.homeSectionRef,
     About: props.navigationRefs.aboutSectionRef,
     Skills: props.navigationRefs.skillsSectionRef,
+    Projects: props.navigationRefs.projectsSectionRef,
     Contact: props.navigationRefs.contactSectionRef,
   };
   const executeScroll = (e) => {

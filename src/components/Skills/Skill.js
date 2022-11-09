@@ -14,10 +14,12 @@ const Skill = (props) => {
             className={`skill-liquid ${
               isSkillLiquidRefVisible && "fill-boiler"
             }`}
-            style={{width: `${skillData.level}%`}}
+            style={{ width: `${skillData.percentage}%` }}
             ref={skillLiquidRef}
           >
-            {`${skillData.level}%`}
+            <span
+              className={`${isSkillLiquidRefVisible && "show-percentage"}`}
+            >{`${skillData.percentage}%`}</span>
           </div>
         </div>
       </div>

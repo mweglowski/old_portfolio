@@ -1,0 +1,58 @@
+.projectCard {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+  text-align: center;
+  width: 80%;
+  padding: 1.5em;
+	margin: auto;
+
+  background-color: #2f2f2f;
+	border-radius: 20px;
+  color: #ffffffcc;
+	z-index: 1;
+	transition: .4s;
+}
+.projectCard:hover {
+	box-shadow: 0 0 .5em rgba(14, 222, 222, 0.745);
+}
+
+.title {
+  font-size: 1.7rem;
+  margin-bottom: 0.7em;
+}
+
+.description {
+	font-family: 'Quicksand', Tahoma;
+	font-weight: 500;
+  color: #ffffff99;
+}
+
+.projectButton {
+	width: 15em;
+	height: 10em;
+	margin: 2em auto 0 auto;
+	padding: .2em;
+
+	border-radius: 25px 25px 10px 10px;
+	overflow: auto;
+	transition: .4s;
+	z-index: 3;
+}
+.projectButton:hover {
+	cursor: pointer;
+}
+
+.projectImage {
+	width: 100%;
+	border-radius: 25px;
+	opacity: .25;
+	transform: translateY(8px);
+	transition: .4s;
+}
+.projectImage:hover {
+	opacity: .5;
+	transform: translateY(-3px);
+	z-index: 5;
+}

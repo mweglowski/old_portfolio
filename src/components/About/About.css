@@ -24,7 +24,9 @@
 
 	background-color: #353535a4;
 	border-radius: 12px;
-	font-family: 'Quicksand', 'sans-serif';
-	font-size: 1.5em;
+	font-family: 'Quicksand', 'Verdana';
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: justify;
 	color:rgba(255, 255, 255, .6);
 }
