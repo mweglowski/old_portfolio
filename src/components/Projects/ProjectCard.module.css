@@ -56,3 +56,28 @@
 	transform: translateY(-3px);
 	z-index: 5;
 }
+
+.technologies {
+	display: flex;
+	gap: 10px;
+	margin-top: 1em;
+}
+
+.tech {
+	display: flex;
+	width: fit-content;
+	opacity: .4;
+	transition: .4s;
+}
+
+.icon, .technologies div{
+	width: 1.25rem;
+	opacity: .4;
+	transition: .4s;
+}
+.icon:hover, .tech:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+

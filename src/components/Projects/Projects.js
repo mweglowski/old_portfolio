@@ -12,9 +12,10 @@ const Projects = React.forwardRef((props, ref) => {
   const projects = [
     {
       id: 0,
-      title: "Tribute Page",
-      description: "Page dedicated to the memory of Steve Jobs",
-      image: tributePageImage,
+      title: "Boat Booking",
+      description: "App that enables us to book some boats in a simple way",
+      image: boatBookingPageImage,
+      technologies: ["React", "HTML", "CSS"],
     },
     {
       id: 1,
@@ -22,30 +23,35 @@ const Projects = React.forwardRef((props, ref) => {
       description:
         "Page of ficitive company that specialises in selling medicine - Shopping Cart",
       image: medreactPageImage,
+      technologies: ["React", "HTML", "CSS"],
     },
     {
       id: 2,
-      title: "Survey Form",
-      description: "Beautiful design of form",
-      image: surveyFormPageImage,
+      title: "Tribute Page",
+      description: "Page dedicated to the memory of Steve Jobs",
+      image: tributePageImage,
+      technologies: ["HTML", "CSS"],
     },
     {
       id: 3,
-      title: "Escape The Virus",
-      description: "Game made in plain JS where you have to escape the virus",
-      image: escapeTheVirusPageImage,
+      title: "Survey Form",
+      description: "Beautiful design of form",
+      image: surveyFormPageImage,
+      technologies: ["HTML", "CSS"],
     },
     {
       id: 4,
-      title: "Hangman",
-      description: "You have to guess a hidden word",
-      image: hangmanPageImage,
+      title: "Escape The Virus",
+      description: "Game made in plain JS where you have to escape the virus",
+      image: escapeTheVirusPageImage,
+      technologies: ["JavaScript", "HTML", "CSS"],
     },
     {
       id: 5,
-      title: "Boat Booking",
-      description: "App that enables us to book some boats in a simple way",
-      image: boatBookingPageImage,
+      title: "Hangman",
+      description: "You have to guess a hidden word",
+      image: hangmanPageImage,
+      technologies: ["JavaScript", "HTML", "SCSS"],
     },
   ];
 
