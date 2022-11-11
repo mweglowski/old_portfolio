@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as JavaScriptIcon } from "../../images/js.svg";
 import { ReactComponent as ReactIcon } from "../../images/js.svg";
 import CSSIcon from "../../images/css.png";
@@ -6,20 +6,37 @@ import { ReactComponent as HTMLIcon } from "../../images/js.svg";
 import classes from "./ProjectCard.module.css";
 
 const ProjectCard = (props) => {
+  const [isLinkButtonShown, setIsLinkButtonShown] = useState(false);
   const { projectData } = props;
 
+  const linkButtonDisplayHandler = () => {
+    setIsLinkButtonShown((prevDisplay) => !prevDisplay);
+  };
+
   return (
-    <div className={classes.projectCard}>
+    <div
+      className={classes.projectCard}
+      onMouseEnter={linkButtonDisplayHandler}
+      onMouseLeave={linkButtonDisplayHandler}
+    >
       <div className={classes.title}>{projectData.title}</div>
       <div className={classes.description}>{projectData.description}</div>
-      <div className={classes.projectButton}>
+      <div className={classes.pageView}>
         <img
           className={classes.projectImage}
           src={projectData.image}
           alt={projectData.description}
         />
-        <div className={classes.buttonBlur} />
       </div>
+      <a
+        className={`${classes.linkButton} ${
+          isLinkButtonShown && classes.showLinkButton
+        }`}
+        href="https://google.com"
+        target="_blank"
+      >
+        See Website
+      </a>
       <div className={classes.technologies}>
         {projectData.technologies.map((tech) => {
           if (tech === "JavaScript") {

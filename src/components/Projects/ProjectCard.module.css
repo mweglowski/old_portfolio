@@ -29,7 +29,7 @@
   color: #ffffff99;
 }
 
-.projectButton {
+.pageView {
 	width: 15em;
 	height: 10em;
 	margin: 2em auto 0 auto;
@@ -57,6 +57,30 @@
 	z-index: 5;
 }
 
+.linkButton {
+	width: fit-content;
+	margin: 1em auto 0 auto;
+	padding: .6em 1.1em;
+
+	background-color: transparent;
+	box-shadow: 0 0 .3em cyan;
+	border-radius: 25px;
+	font-size: .8rem;
+	font-family: 'Quicksand', 'Tahoma';
+	font-weight: 500;
+	color: rgba(0, 255, 255, 0.609);;
+	text-decoration: none;
+	opacity: 0;
+	transition: .4s;
+}
+.showLinkButton {
+	opacity: 1;
+}
+.linkButton:hover {
+	background-color: rgb(86, 195, 195);
+	color: black;
+}
+
 .technologies {
 	display: flex;
 	gap: 10px;
@@ -79,5 +103,4 @@
 	cursor: pointer;
 	opacity: .8;
 }
-
 
