@@ -2,10 +2,17 @@ import NavLinks from "./NavLinks";
 import "./Navbar.css";
 
 const Navbar = (props) => {
+  const scrollToHomeSectionHandler = (e) => {
+    e.preventDefault();
+    props.navigationRefs.homeSectionRef.current.scrollIntoView();
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-logo-button-wrapper">
-        <div className="navbar-logo">Martin</div>
+        <button className="navbar-logo" onClick={scrollToHomeSectionHandler}>
+          Martin
+        </button>
 
         <button
           className="navbar-expand-btn"

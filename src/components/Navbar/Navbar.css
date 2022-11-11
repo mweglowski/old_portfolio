@@ -18,8 +18,17 @@
 }
 
 .navbar-logo {
+  outline: none;
+  border: none;
+  background-color: transparent;
   color: #2eedfbbb;
   font-size: 1.3em;
+  transition: .4s;
+}
+.navbar-logo:hover {
+  cursor: pointer;
+  text-shadow: 0 0 .3em rgba(0, 255, 255, 0.851);
+  color: rgba(0, 255, 255, 0.695);
 }
 
 .navbar-expand-btn {
@@ -39,6 +48,7 @@
   height: 2em;
 }
 .line {
+  margin: .095em;
   width: 2.5em;
   height: 0.8em;
   background-color: #3c949e;
@@ -47,7 +57,7 @@
 
 .animate-first {
   transform: translateY(0.6em) rotate(45deg);
-  animation: animate-first 0.5s ease-in-out;
+  animation: animate-first .5s ease-in-out;
 }
 @keyframes animate-first {
   from {
@@ -63,7 +73,7 @@
 }
 .animate-second {
   opacity: 0;
-  animation: animate-second 0.7s ease-in-out;
+  animation: animate-second 0.5s ease-in-out;
 }
 @keyframes animate-second {
   from {
@@ -77,7 +87,7 @@
 
 .animate-third {
   transform: translateY(-0.75em) rotate(-45deg);
-  animation: animate-third 0.2s ease-in-out;
+  animation: animate-third 0.5s ease-in-out;
 }
 @keyframes animate-third {
   from {
