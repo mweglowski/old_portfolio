@@ -8,7 +8,7 @@
 	background-color: #2e2e2ed8;
 	color: white;
 	animation: slide-down .7s ease-out;
-	z-index: 9;
+	z-index: -1;
 }
 
 .nav-link {

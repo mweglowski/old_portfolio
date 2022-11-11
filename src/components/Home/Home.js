@@ -2,6 +2,11 @@ import React from "react";
 import "./Home.css";
 
 const Home = React.forwardRef((props, ref) => {
+  const scrollToContactSectionHandler = (e) => {
+    e.preventDefault();
+    props.contactSectionRef.current.scrollIntoView();
+  };
+
   return (
     <div className="home" ref={ref}>
       <div className="title">
@@ -10,7 +15,7 @@ const Home = React.forwardRef((props, ref) => {
           <span>Martin</span>
         </div>
         <div className="title-profession"></div>
-        <button className="home-button">Contact</button>
+        <button className="home-button" onClick={scrollToContactSectionHandler}>Contact</button>
       </div>
     </div>
   );

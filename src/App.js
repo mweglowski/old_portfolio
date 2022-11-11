@@ -20,7 +20,7 @@ function App() {
   const skillsSectionRef = useRef();
   const projectsSectionRef = useRef();
   const contactSectionRef = useRef();
-  
+
   const navigationRefs = {
     homeSectionRef: homeSectionRef,
     aboutSectionRef: aboutSectionRef,
@@ -36,7 +36,7 @@ function App() {
         toggleNavLinksDisplay={toggleNavLinksDisplayHandler}
         isNavLinksShown={isNavLinksShown}
       />
-      <Home ref={homeSectionRef} />
+      <Home ref={homeSectionRef} contactSectionRef={contactSectionRef} />
       <About ref={aboutSectionRef} />
       <Skills ref={skillsSectionRef} />
       <Projects ref={projectsSectionRef} />
