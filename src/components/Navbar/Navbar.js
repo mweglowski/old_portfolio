@@ -33,12 +33,11 @@ const Navbar = (props) => {
           )}
         </button>
       </div>
-      {props.isNavLinksShown && (
-        <NavLinks
-          navigationRefs={props.navigationRefs}
-          toggleNavLinksDisplay={props.toggleNavLinksDisplay}
-        />
-      )}
+      <NavLinks
+        navigationRefs={props.navigationRefs}
+        toggleNavLinksDisplay={props.toggleNavLinksDisplay}
+        isNavLinksShown={props.isNavLinksShown}
+      />
     </div>
   );
 };

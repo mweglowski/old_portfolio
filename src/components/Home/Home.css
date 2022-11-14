@@ -37,18 +37,19 @@
 }
 
 .title-name span {
+  padding-right: .4em;
   color: #62baba;
   animation: text-breath 4s infinite;
 }
 @keyframes text-breath {
   0% {
-    text-shadow: 0 0 0.5em #62baba;
+    text-shadow: 0 0 0.4em #62baba;
   }
   50% {
     text-shadow: 0 0 0.05em #62baba;
   }
   100% {
-    text-shadow: 0 0 0.5em #62baba;
+    text-shadow: 0 0 0.4em #62baba;
   }
 }
 

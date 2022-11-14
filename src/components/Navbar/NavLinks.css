@@ -1,49 +1,95 @@
 .nav-links {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 8px;
-	padding: 1.5em;
+  display: none;
+}
+.nav-links-show-on-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 1.5em;
 
-	background-color: #2e2e2ed8;
-	color: white;
-	animation: slide-down .7s ease-out;
-	z-index: -1;
+  background-color: #2e2e2ed8;
+  color: white;
+  z-index: -1;
 }
 
 .nav-link {
-	margin: auto;
-	padding: .8em;
-	width: 80%;
+  margin: auto;
+  padding: 0.8em;
+  width: 80%;
 
-	background-color: #353535e2;
-	border-radius: 30px;
-	border: 2px solid transparent;
-	font-family: 'Quicksand', 'Verdana';
-	font-size: 1.7rem;
-	text-align: center;
-	list-style: none;
-	transition: .4s;
+  background-color: #353535e2;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  font-family: "Quicksand", "Verdana";
+  font-size: 1.7rem;
+  text-align: center;
+  list-style: none;
+  transition: 0.4s;
 }
 .nav-link:hover {
-	background-color: #2e2e2ed8;
-	color: #62baba;
-	text-shadow: 0 0 .2em #62baba;
-	box-shadow: 0 0 .2em #62baba;
-	border: 2px solid #62baba;
-	cursor: pointer;
+  background-color: #2e2e2ed8;
+  color: #62baba;
+  text-shadow: 0 0 0.2em #62baba;
+  box-shadow: 0 0 0.2em #62baba;
+  border: 2px solid #62baba;
+  cursor: pointer;
+}
+.slide-down {
+  animation: slide-down 0.7 ease-in-out;
 }
 
 @keyframes slide-down {
-	0% {
-		opacity: 0;
-		transform: translateY(-30%);
-	}
-	80% {
-		opacity: 1;
-		transform: translateY(2%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+		
+    background-color: #2e2e2ed8;
+    color: white;
+    z-index: -1;
+  }
+  .nav-link {
+    width: fit-content;
+    margin: 0;
+    padding: .2em .7em;
+    background-color: transparent;
+    color: rgba(0, 255, 255, 0.573);
+    font-size: 1em;
+    animation: slide-up .7s ease-in-out;
+  }
+  .nav-link:hover {
+    background-color: #2bc3c3;
+    border-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 .3em rgba(0, 255, 255, 0.76);
+    color: black;
+    text-shadow: 0 0 .2em rgb(5, 59, 75);
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 }

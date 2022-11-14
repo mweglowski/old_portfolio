@@ -97,3 +97,14 @@
     transform: translateY(-0.7em) rotate(-45deg);
   }
 }
+
+
+@media screen and (min-width: 675px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar-expand-btn {
+    display: none;
+  }
+}

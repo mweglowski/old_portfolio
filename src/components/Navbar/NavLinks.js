@@ -15,7 +15,7 @@ const NavLinks = (props) => {
   };
 
   return (
-    <ul className="nav-links">
+    <ul className={`nav-links ${props.isNavLinksShown && 'nav-links-show-on-mobile'}`}>
       <li className="nav-link" onClick={executeScroll}>
         Home
       </li>
