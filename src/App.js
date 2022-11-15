@@ -41,7 +41,7 @@ function App() {
       <Skills ref={skillsSectionRef} />
       <Projects ref={projectsSectionRef} />
       <Contact ref={contactSectionRef} />
-      <img src={portrait} className="about-section-image" alt="portrait" />
+      {/* <img src={portrait} className="about-section-image" alt="portrait" /> */}
     </div>
   );
 }

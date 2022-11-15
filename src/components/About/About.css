@@ -3,7 +3,7 @@
 	flex-direction: column;
 	gap: .5em;
 	padding-bottom: 4em;
-	background-color: #353535a4;
+	background-color: #35353576;
 }
 
 .about-section-title {
@@ -19,7 +19,7 @@
 }
 
 .about-section-description {
-	margin: 0 .7em;
+	margin: 1em 1.4em;
 	padding: 1em;
 
 	background-color: #353535a4;
