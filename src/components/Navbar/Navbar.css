@@ -7,13 +7,10 @@
   padding: 0.7em 1em;
 
   background-color: #2e2e2ed8;
-  /* font-family: 'Quicksand', 'sans-serif'; */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 10;
   transition: 1s;
   animation: slide-down 1s ease-in-out;
 }
-
 
 .navbar-logo-button-wrapper {
   display: flex;

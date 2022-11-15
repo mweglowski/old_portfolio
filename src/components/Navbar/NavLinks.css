@@ -36,7 +36,7 @@
   cursor: pointer;
 }
 .slide-down {
-  animation: slide-down 0.7 ease-in-out;
+  animation: slide-down .7s ease-in-out;
 }
 
 @keyframes slide-down {
