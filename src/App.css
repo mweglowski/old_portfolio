@@ -1,3 +1,8 @@
+.app {
+	margin: auto;
+	max-width: 1100px;
+}
+
 .about-section-image {
 	height: 100vh;
 	position: fixed;

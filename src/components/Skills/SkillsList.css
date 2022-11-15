@@ -1,4 +1,12 @@
 .skills-list {
 	display: flex;
 	flex-direction: column;
+	gap: 2rem;
+}
+
+@media screen and (min-width: 740px) {
+	.skills-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
