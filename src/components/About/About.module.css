@@ -1,0 +1,94 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-bottom: 4em;
+  background-color: #35353576;
+}
+
+.sectionTitle {
+  margin: 1em 0 0.5em 1em;
+  text-shadow: 0 0 0.3em black;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.personalDescription {
+  margin: 1em 1.4em;
+  padding: 1em;
+
+  background-color: #353535a4;
+  border-radius: 12px;
+  font-family: "Quicksand", "Verdana";
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.websites {
+  margin: 6em 2em;
+}
+
+.websitesHeader {
+  padding: 1em;
+
+  background-color: #35353576;
+  border-radius: 15px;
+  color: #ffffffbb;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 1.4em;
+}
+
+.websitesHeaderTitle {
+  margin-bottom: 0.4em;
+  color: #ffffffbb;
+  font-family: "Quicksand", "Tahoma";
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.websitesHeaderDescription {
+  font-size: 0.8em;
+  font-family: "Quicksand", "Tahoma";
+}
+
+.websiteList {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.websiteItem {
+  list-style: none;
+  margin: 1.5em;
+}
+
+.websiteItemLink {
+  padding: 0.7em;
+  background-color: #35353576;
+  border-radius: 15px;
+  color: #00ffffbb;
+  font-family: "Quicksand", "Tahoma";
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.websiteItemLink:hover {
+  cursor: pointer;
+	background-color: #00ffffbb;
+	box-shadow: 0 0 .3em #00ffffaa;
+	color: black;
+	text-shadow: 0 0 .1em black;
+}
+
+/* .websiteItem:hover .websiteItem::before {
+	content: 'Go to Website';
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: 5;
+} */

@@ -25,7 +25,7 @@
   content: "Hi!";
   position: relative;
   left: 0;
-  animation: slide-right 1s ease-out;
+  animation: slide-right-welcome 1s ease-out;
 }
 
 .title-name {
@@ -79,7 +79,7 @@
   }
 }
 
-@keyframes slide-right {
+@keyframes slide-right-welcome {
   0% {
     opacity: 0;
     left: -200px;
