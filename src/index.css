@@ -1,6 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +12,12 @@
 }
 
 body {
-  background: linear-gradient(rgb(40, 40, 40), rgb(16, 37, 50), rgb(23, 22, 54), rgb(1, 52, 64));
+  background: linear-gradient(
+    rgb(40, 40, 40),
+    rgb(16, 37, 50),
+    rgb(23, 22, 54),
+    rgb(1, 52, 64)
+  );
 }
 
 ::-webkit-scrollbar-thumb {
