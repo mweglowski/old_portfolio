@@ -33,6 +33,13 @@
   box-shadow: 0 0 0.2em rgb(1, 75, 75);
   border-radius: 10px;
 }
+.line:hover {
+  transition: .4s;
+  cursor: pointer;
+  background: linear-gradient(rgba(7, 232, 232, 0.792), rgba(2, 137, 164, 0.721));
+  box-shadow: 0 0 0.4em rgb(2, 178, 194);
+}
+
 .line:nth-child(1) {
   transform: translateX(100px) translateY(100px) rotateY(30deg) rotate(-30deg);
   animation: animate-1 1s ease-in-out;
