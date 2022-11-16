@@ -110,3 +110,14 @@
 		height: 14em;
 	}
 }
+
+@media screen and (min-width: 780px) {
+	.pageView {
+		width: 15em;
+		height: 10em;
+	}
+	.projectCard {
+		width: 40%;
+		margin-bottom: 5em;
+	}
+}

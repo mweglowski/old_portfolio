@@ -1,6 +1,17 @@
 .projectsList {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
-	gap: 4em;
+	gap: 7em;
+	margin-bottom: 7em;
+}
+
+@media screen and (min-width: 780px) {
+	.projectsList {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 0;
+	}
 }
