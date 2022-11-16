@@ -13,9 +13,10 @@
 
 body {
   background: linear-gradient(
-    rgb(40, 40, 40),
-    rgb(16, 37, 50),
-    rgb(23, 22, 54),
+    rgb(32, 32, 32),
+    rgb(14, 29, 39),
+    rgb(44, 47, 49),
+    rgb(14, 29, 39),
     rgb(1, 52, 64)
   );
 }
