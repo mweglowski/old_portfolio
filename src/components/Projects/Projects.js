@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import ProjectsList from "./ProjectsList";
 import tributePageImage from "../../images/tribute-page.png";
 import surveyFormPageImage from "../../images/survey-form.png";
@@ -9,6 +10,7 @@ import escapeTheVirusPageImage from "../../images/escape-the-virus.png";
 import classes from "./Projects.module.css";
 
 const Projects = React.forwardRef((props, ref) => {
+  const { ref: coneRef, inView: isConeVisible } = useInView();
   const projects = [
     {
       id: 0,
@@ -57,7 +59,19 @@ const Projects = React.forwardRef((props, ref) => {
 
   return (
     <section className={classes.section} ref={ref}>
-      <div className={classes.sectionTitle}>Projects</div>
+      <div className={classes.sectionTitle}>
+        Projects
+        <div className={classes.titleAnimation} ref={coneRef}>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+          <div className={`${isConeVisible && classes.line}`}></div>
+        </div>
+      </div>
       <ProjectsList projectsList={projects} />
     </section>
   );

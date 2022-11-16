@@ -11,11 +11,15 @@ const NavLinks = (props) => {
   const executeScroll = (e) => {
     e.preventDefault();
     refs[e.target.innerText].current.scrollIntoView();
-    props.toggleNavLinksDisplay();
+    window.innerWidth < 675 && props.toggleNavLinksDisplay();
   };
 
   return (
-    <ul className={`nav-links ${props.isNavLinksShown && 'nav-links-show-on-mobile'}`}>
+    <ul
+      className={`nav-links ${
+        props.isNavLinksShown && "nav-links-show-on-mobile slide-down"
+      }`}
+    >
       <li className="nav-link" onClick={executeScroll}>
         Home
       </li>

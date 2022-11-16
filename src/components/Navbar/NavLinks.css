@@ -4,17 +4,16 @@
 .nav-links-show-on-mobile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  gap: 1em;
   padding: 1.5em;
 
-  background-color: #2e2e2ed8;
+  /* background-color: #2e2e2ed8; */
   color: white;
   z-index: -1;
 }
 
 .nav-link {
-  margin: auto;
+  margin: 0 auto; 
   padding: 0.8em;
   width: 80%;
 
@@ -36,7 +35,7 @@
   cursor: pointer;
 }
 .slide-down {
-  animation: slide-down .7s ease-in-out;
+  animation: slide-down 0.7s ease-in-out;
 }
 
 @keyframes slide-down {
@@ -60,7 +59,7 @@
     justify-content: center;
     gap: 10px;
     padding: 0;
-		
+
     background-color: #2e2e2ed8;
     color: white;
     z-index: -1;
@@ -68,19 +67,19 @@
   .nav-link {
     width: fit-content;
     margin: 0;
-    padding: .2em .7em;
+    padding: 0.2em 0.7em;
     background-color: transparent;
     color: rgba(0, 255, 255, 0.573);
     font-size: 1em;
-    animation: slide-up .7s ease-in-out;
+    animation: slide-up 0.7s ease-in-out;
   }
   .nav-link:hover {
     background-color: #2bc3c3;
     border-color: transparent;
     border-radius: 5px;
-    box-shadow: 0 0 .3em rgba(0, 255, 255, 0.76);
+    box-shadow: 0 0 0.3em rgba(0, 255, 255, 0.76);
     color: black;
-    text-shadow: 0 0 .2em rgb(5, 59, 75);
+    text-shadow: 0 0 0.2em rgb(5, 59, 75);
   }
   @keyframes slide-up {
     from {
