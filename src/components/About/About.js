@@ -30,7 +30,7 @@ const About = React.forwardRef((props, ref) => {
         <ul className={classes.websiteList}>
           <li className={classes.websiteItem}>
             <a
-              href="https://google.com"
+              href="https://app.datacamp.com/profile/flaren"
               target="_blank"
               className={classes.websiteItemLink}
             >
@@ -39,7 +39,7 @@ const About = React.forwardRef((props, ref) => {
           </li>
           <li className={classes.websiteItem}>
             <a
-              href="https://google.com"
+              href="https://teamtreehouse.com/profiles/mweglowski"
               target="_blank"
               className={classes.websiteItemLink}
             >
@@ -48,7 +48,7 @@ const About = React.forwardRef((props, ref) => {
           </li>
           <li className={classes.websiteItem}>
             <a
-              href="https://google.com"
+              href="https://www.freecodecamp.org/mweglowski"
               target="_blank"
               className={classes.websiteItemLink}
             >
@@ -57,7 +57,7 @@ const About = React.forwardRef((props, ref) => {
           </li>
           <li className={classes.websiteItem}>
             <a
-              href="https://google.com"
+              href="https://www.codewars.com/users/Mweglowski"
               target="_blank"
               className={classes.websiteItemLink}
             >
@@ -66,7 +66,7 @@ const About = React.forwardRef((props, ref) => {
           </li>
           <li className={classes.websiteItem}>
             <a
-              href="https://google.com"
+              href="https://www.hackerrank.com/marcin_weglowsk1"
               target="_blank"
               className={classes.websiteItemLink}
             >
