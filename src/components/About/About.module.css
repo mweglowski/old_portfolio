@@ -92,3 +92,32 @@
 	left: 10px;
 	z-index: 5;
 } */
+
+.technology {
+  font-family: 'Quicksand', 'sans-serif';
+  color: #00ffffbb;
+  text-shadow: 0 0 .2em #00ffffbb;
+}
+
+
+@media screen and (min-width: 600px) {
+  .personalDescription {
+    width: 60%;
+    margin-left: 30%;
+  }
+  .personalDescription:nth-child(2) {
+    margin-left: 10%;
+  }
+
+  .websites {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .websites {
+    width: 483px;
+  }
+}

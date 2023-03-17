@@ -6,17 +6,10 @@ const About = React.forwardRef((props, ref) => {
     <section className={classes.section} ref={ref}>
       <div className={classes.sectionTitle}>About</div>
       <article className={classes.personalDescription}>
-        Welcome! I am Martin and I am highschool student passionated in coding,
-        programming, data science, AI and as you know especially in Front-End
-        and building web applications mostly using React, but I am also trying
-        some Flutter.
+      Hello and welcome! My name is Martin and I'm a high school student with a passion for coding and programming, particularly in the fields of data science, <span className={classes.technology}>AI</span>, and front-end development. I specialize in building web applications using <span className={classes.technology}>React</span>, but I'm also exploring <span className={classes.technology}>Flutter</span>. In addition to my front-end expertise, I have a keen interest in machine learning and am currently focused on this exciting field.
       </article>
       <article className={classes.personalDescription}>
-        I was actively learning new things from different sources. From things
-        connected to JavaScript I was getting knowledge about Node.js, Express
-        and React. I also have a bit experience in some Python libraries like
-        Pandas, Matplotlib, Seaborn and Sklearn, because of my slight interest
-        in Data Engineering, Analysis and Machine Learning.
+      I have been proactively seeking out new knowledge from various sources. Specifically, I have been expanding my understanding of JavaScript-related technologies such as <span className={classes.technology}>Node.js</span>, <span className={classes.technology}>Express</span>, <span className={classes.technology}>React</span>, and <span className={classes.technology}>React Native</span>. Additionally, I possess experience in <span className={classes.technology}>Python</span> ranging from web development using frameworks like <span className={classes.technology}>Django</span> and <span className={classes.technology}>Flask</span>, to advanced concepts in AI such as <span className={classes.technology}>Machine Learning</span> and <span className={classes.technology}>Deep Learning</span>. As a result, I am well-versed in popular Python libraries including numpy, pandas, and matplotlib, as well as tools like <span className={classes.technology}>Tensorflow</span>.
       </article>
 
       <div className={classes.websites}>
