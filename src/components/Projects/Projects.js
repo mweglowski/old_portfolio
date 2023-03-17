@@ -7,6 +7,7 @@ import medreactPageImage from "../../images/medreact.png";
 import boatBookingPageImage from "../../images/boat-booking.png";
 import hangmanPageImage from "../../images/hangman.png";
 import escapeTheVirusPageImage from "../../images/escape-the-virus.png";
+import djangstaurantImage from "../../images/djangstaurant.png"
 import classes from "./Projects.module.css";
 
 const Projects = React.forwardRef((props, ref) => {
@@ -14,13 +15,20 @@ const Projects = React.forwardRef((props, ref) => {
   const projects = [
     {
       id: 0,
+      title: "Djangstaurant",
+      description: "Restaurant-like website with clean design",
+      image: djangstaurantImage,
+      technologies: ["Python", "Django", "HTML", "CSS"],
+    },
+    {
+      id: 1,
       title: "Boat Booking",
       description: "App that enables us to book some boats in a simple way",
       image: boatBookingPageImage,
       technologies: ["React", "HTML", "CSS"],
     },
     {
-      id: 1,
+      id: 2,
       title: "Medreact",
       description:
         "Page of ficitive company that specialises in selling medicine - Shopping Cart",
@@ -28,28 +36,28 @@ const Projects = React.forwardRef((props, ref) => {
       technologies: ["React", "HTML", "CSS"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Tribute Page",
       description: "Page dedicated to the memory of Steve Jobs",
       image: tributePageImage,
       technologies: ["HTML", "CSS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "Survey Form",
       description: "Beautiful design of form",
       image: surveyFormPageImage,
       technologies: ["HTML", "CSS"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Escape The Virus",
       description: "Game made in plain JS where you have to escape the virus",
       image: escapeTheVirusPageImage,
       technologies: ["JavaScript", "HTML", "CSS"],
     },
     {
-      id: 5,
+      id: 6,
       title: "Hangman",
       description: "You have to guess a hidden word",
       image: hangmanPageImage,

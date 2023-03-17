@@ -89,6 +89,26 @@ const ProjectCard = (props) => {
                 REACT
               </div>
             );
+          } else if (tech === "Django") {
+            return (
+              <div
+                className={classes.tech}
+                style={{ color: "#1aed52", width: "fit-content" }}
+                key={tech}
+              >
+                DJANGO
+              </div>
+            );
+          } else if (tech === "Python") {
+            return (
+              <div
+                className={classes.tech}
+                style={{ color: "#264eff", width: "fit-content" }}
+                key={tech}
+              >
+                PYTHON
+              </div>
+            );
           } else return;
         })}
       </div>
