@@ -34,6 +34,10 @@
 	gap: .8em;
 }
 
+.contact-section-form-container {
+	margin: auto;
+}
+
 .contact-section-form-email-input, .contact-section-form-textarea {
 	padding: .7em;
 	background-color: #00000044;
@@ -86,4 +90,17 @@
 	font-family: 'Quicksand', 'Verdana';
 	font-weight: 500;
 	color: #1c8997ce;
+}
+
+
+
+@media screen and (min-width: 600px) {
+	.contact-section-form-container {
+		width: 541px;
+	}
+}
+@media screen and (min-width: 950px) {
+	.contact-section-form-container {
+		width: 60%;
+	}
 }

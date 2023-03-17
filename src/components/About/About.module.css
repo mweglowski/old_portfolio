@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 0.5em;
   padding-bottom: 4em;
-  background-color: #35353576;
+  background: linear-gradient(135deg, #35353576, transparent);
 }
 
 .sectionTitle {

@@ -19,7 +19,7 @@ const Contact = React.forwardRef((props, ref) => {
       .catch((error) => {
         console.log(error.text);
       });
-    console.log('works or not?')
+    console.log("works or not?");
   };
 
   // const submitFormHandler = (e) => {
@@ -32,25 +32,25 @@ const Contact = React.forwardRef((props, ref) => {
       <div className="contact-section-background-gradient"></div>
       <div className="contact-section-content">
         <div className="contact-section-title">Contact</div>
-        <form
-          onSubmit={sendEmail}
-          className="contact-section-form"
-        >
-          <input
-            type="text"
-            name="user_email"
-            className="contact-section-form-email-input"
-            placeholder="Email"
-          />
-          <textarea
-            name="message"
-            className="contact-section-form-textarea"
-            placeholder="Message"
-          />
-          <button className="contact-section-button" type="submit">
-            Send Message
-          </button>
-        </form>
+        <div className="contact-section-form-container">
+          <form onSubmit={sendEmail} className="contact-section-form">
+            <input
+              type="text"
+              name="user_email"
+              className="contact-section-form-email-input"
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              className="contact-section-form-textarea"
+              placeholder="Message"
+            />
+            <button className="contact-section-button" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+
         <p className="contact-section-p">
           I will try to reply as soon as possible.
         </p>
