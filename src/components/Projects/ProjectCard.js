@@ -32,7 +32,7 @@ const ProjectCard = (props) => {
         className={`${classes.linkButton} ${
           isLinkButtonShown && classes.showLinkButton
         }`}
-        href="https://google.com"
+        href="https://github.com/Mweglowski"
         target="_blank"
       >
         See Website
